@@ -13,7 +13,6 @@ public class MyMvcConfig implements WebMvcConfigurer {
         registry.addViewController("404").setViewName("error");
         registry.addViewController("main.html").setViewName("index");
     }
-
     //拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
@@ -23,6 +22,5 @@ public class MyMvcConfig implements WebMvcConfigurer {
                 .addPathPatterns("/**")
                 //排除哪些路径
                 .excludePathPatterns("/login.html","/404","/hello","/","/css/**","/fonts/**","/images/**","/js/**","/lib/**");
-
     }
 }

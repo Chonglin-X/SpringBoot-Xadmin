@@ -16,5 +16,4 @@ public class OutController {
         System.out.println(session);
         return "login";
     }
-
 }
