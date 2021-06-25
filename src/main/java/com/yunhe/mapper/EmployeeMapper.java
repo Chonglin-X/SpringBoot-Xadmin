@@ -16,7 +16,7 @@ public interface EmployeeMapper {
     //查询全部员工
     ArrayList<Employee> selectAllEmployee();
     //通过id查询员工
-    ArrayList<Employee> selectByIDEmployee(Integer id);
+    Employee selectByIDEmployee(Integer id);
     //通过id删除一个员工
     int deleteByIDEmployee(Integer id);
 
